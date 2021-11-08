@@ -61,97 +61,93 @@ console.log('Show me name, surname, age and player code: ' ,firstName, lastName,
 // 4. Creating an array with 10 players, with the same rules here on top
 const tenPlayers = [
     {
-        code: '',
+        code: randomLetters() + randomNumbers(1, 9),
         firstName: 'Carmelo',
         lastName: 'Anthony',
         age: 37,
-        pointsXGame: 21,
-        threePointsPercentage: 60,
+        pointsXGame: pointsXGameRatio(0, 50),
+        threePointsPercentage: completed3Shoots (0, 100),
     },
-
     {
-        code: '',
-        firstName: 'Anthony',
-        lastName: 'Davis',
-        age: 28,
-        pointsXGame: 21,
-        threePointsPercentage: 60,
-    },
-
-    {
-        code: '',
+        code: randomLetters() + randomNumbers(1, 9),
         firstName: 'LeBron',
         lastName: 'James',
-        age: 36,
-        pointsXGame: 21,
-        threePointsPercentage: 60,
+        age: 38,
+        pointsXGame: pointsXGameRatio(0, 50),
+        threePointsPercentage: completed3Shoots (0, 100),
     },
-
     {
-        code: '',
-        firstName: 'Rajon',
-        lastName: 'Rondo',
-        age: 35,
-        pointsXGame: 21,
-        threePointsPercentage: 60,
+        code: randomLetters() + randomNumbers(1, 9),
+        firstName: 'Carmelo',
+        lastName: 'Anthony',
+        age: 37,
+        pointsXGame: pointsXGameRatio(0, 50),
+        threePointsPercentage: completed3Shoots (0, 100),
     },
-
     {
-        code: '',
-        firstName: 'Russell',
-        lastName: 'Westbrook',
-        age: 32,
-        pointsXGame: 21,
-        threePointsPercentage: 60,
+        code: randomLetters() + randomNumbers(1, 9),
+        firstName: 'Dwight',
+        lastName: 'Howard',
+        age: 37,
+        pointsXGame: pointsXGameRatio(0, 50),
+        threePointsPercentage: completed3Shoots (0, 100),
     },
-
     {
-        code: '',
-        firstName: 'Trevor',
-        lastName: 'Ariza',
-        age: 36,
-        pointsXGame: 21,
-        threePointsPercentage: 60,
+        code: randomLetters() + randomNumbers(1, 9),
+        firstName: 'Jay',
+        lastName: 'Huff',
+        age: 37,
+        pointsXGame: pointsXGameRatio(0, 50),
+        threePointsPercentage: completed3Shoots (0, 100),
     },
-
     {
-        code: '',
-        firstName: 'DeAndre',
-        lastName: 'Jordan',
-        age: 36,
-        pointsXGame: 21,
-        threePointsPercentage: 60,
-    },
-
-    {
-        code: '',
-        firstName: 'Pierfrancesco',
-        lastName: 'Scarinci',
-        age: '26',
-        pointsXGame: 21,
-        threePointsPercentage: 60,
-    },
-
-    {
-        code: '',
+        code: randomLetters() + randomNumbers(1, 9),
         firstName: 'Malik',
         lastName: 'Monk',
-        age: 23,
-        pointsXGame: 21,
-        threePointsPercentage: 60,
+        age: 37,
+        pointsXGame: pointsXGameRatio(0, 50),
+        threePointsPercentage: completed3Shoots (0, 100),
+    },
+    {
+        code: randomLetters() + randomNumbers(1, 9),
+        firstName: 'Carmelo',
+        lastName: 'Anthony',
+        age: 37,
+        pointsXGame: pointsXGameRatio(0, 50),
+        threePointsPercentage: completed3Shoots (0, 100),
+    },
+    {
+        code: randomLetters() + randomNumbers(1, 9),
+        firstName: 'Wayne',
+        lastName: 'Ellington',
+        age: 37,
+        pointsXGame: pointsXGameRatio(0, 50),
+        threePointsPercentage: completed3Shoots (0, 100),
+    },
+    {
+        code: randomLetters() + randomNumbers(1, 9),
+        firstName: 'Kendrick',
+        lastName: 'Nunn',
+        age: 37,
+        pointsXGame: pointsXGameRatio(0, 50),
+        threePointsPercentage: completed3Shoots (0, 100),
+    },
+    {
+        code: randomLetters() + randomNumbers(1, 9),
+        firstName: 'Avery',
+        lastName: 'Bradley',
+        age: 37,
+        pointsXGame: pointsXGameRatio(0, 50),
+        threePointsPercentage: completed3Shoots (0, 100),
     },
 
-    {
-        code: '',
-        firstName: 'Austin',
-        lastName: 'Reaves',
-        age: 23,
-        pointsXGame: 21,
-        threePointsPercentage: 60,
-    }
 ];
 
 console.log('10 giocatori: ', tenPlayers);
+
+// 5. Creating an array in which players has points ratio > 35 and three points shoots ratio > 80
+
+
 
 
 
