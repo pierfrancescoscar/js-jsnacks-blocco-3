@@ -17,11 +17,29 @@
 
 // Refs
 const basketPlayer = {
-        code: 'txt',
-        firstName: 'txt',
-        lastName: 'txt',
-        age: 'txt',
-        pointsXGame: 1,
-        shootPercentage: 1,
+        code: '123ABC',
+        firstName: 'Pierfrancesco',
+        lastName: 'Scarinci',
+        age: '26',
+        pointsXGame: 21,
+        threePointsPercentage: 60,
     };
 
+// Functions
+
+// Basket Player code must be generated from 3 random uppercase letters and 3 random numbers
+
+const playerCode = basketPlayer.code;
+
+function randomLetters() {
+
+    const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    let result = '';
+
+    for (let i = 0; i <= 3 - 1; i++ ) {
+        result += alphabet.charAt(Math.floor(Math.random() * alphabet.length));
+    }
+    return result;
+}
+
+console.log(randomLetters());
