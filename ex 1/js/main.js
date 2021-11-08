@@ -58,6 +58,103 @@ console.log ('Percentage of 3 points shoots completed: ' ,basketPlayer.threePoin
 const {firstName, lastName, age, code} = basketPlayer;
 console.log('Show me name, surname, age and player code: ' ,firstName, lastName, age, code); // Printing what has been asked here on top
 
+// 4. Creating an array with 10 players, with the same rules here on top
+const tenPlayers = [
+    {
+        code: '',
+        firstName: 'Carmelo',
+        lastName: 'Anthony',
+        age: 37,
+        pointsXGame: 21,
+        threePointsPercentage: 60,
+    },
+
+    {
+        code: '',
+        firstName: 'Anthony',
+        lastName: 'Davis',
+        age: 28,
+        pointsXGame: 21,
+        threePointsPercentage: 60,
+    },
+
+    {
+        code: '',
+        firstName: 'LeBron',
+        lastName: 'James',
+        age: 36,
+        pointsXGame: 21,
+        threePointsPercentage: 60,
+    },
+
+    {
+        code: '',
+        firstName: 'Rajon',
+        lastName: 'Rondo',
+        age: 35,
+        pointsXGame: 21,
+        threePointsPercentage: 60,
+    },
+
+    {
+        code: '',
+        firstName: 'Russell',
+        lastName: 'Westbrook',
+        age: 32,
+        pointsXGame: 21,
+        threePointsPercentage: 60,
+    },
+
+    {
+        code: '',
+        firstName: 'Trevor',
+        lastName: 'Ariza',
+        age: 36,
+        pointsXGame: 21,
+        threePointsPercentage: 60,
+    },
+
+    {
+        code: '',
+        firstName: 'DeAndre',
+        lastName: 'Jordan',
+        age: 36,
+        pointsXGame: 21,
+        threePointsPercentage: 60,
+    },
+
+    {
+        code: '',
+        firstName: 'Pierfrancesco',
+        lastName: 'Scarinci',
+        age: '26',
+        pointsXGame: 21,
+        threePointsPercentage: 60,
+    },
+
+    {
+        code: '',
+        firstName: 'Malik',
+        lastName: 'Monk',
+        age: 23,
+        pointsXGame: 21,
+        threePointsPercentage: 60,
+    },
+
+    {
+        code: '',
+        firstName: 'Austin',
+        lastName: 'Reaves',
+        age: 23,
+        pointsXGame: 21,
+        threePointsPercentage: 60,
+    }
+];
+
+console.log('10 giocatori: ', tenPlayers);
+
+
+
 
 // Function - Random 3 Uppercase Letters
 function randomLetters() {
