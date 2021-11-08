@@ -30,15 +30,22 @@ const basketPlayer = {
 // Basket Player code must be generated from 3 random uppercase letters and 3 random numbers
 
 // Functions Evocations
-randomLetters();
-randomNumbers(1, 9);
+randomLetters(); // Random alphabet letters (we need 3 of them)
+randomNumbers(1, 9); // Random numbers from 1 to 9 (we need 3 of them)
+pointsXGameRatio (0, 50) // Random numbers from 1 to 50 for our points x game/r
 //
 
 // Update Basketball Player Code
 const playerCode = randomLetters() + randomNumbers(1, 9);
-console.log(playerCode);
+console.log('Basketball Player Code: ', playerCode);
 
 basketPlayer.code = playerCode;
+
+// Update Basketball Player Points X Game
+const points = pointsXGameRatio (0, 50);
+
+basketPlayer.pointsXGame = points;
+console.log('New points per game: ' , basketPlayer.pointsXGame);
 
 
 // Function - Random 3 Uppercase Letters
@@ -66,6 +73,10 @@ function randomNumbers(min, max) {
 }
 //
 
+// Function -- Random number from 0 to 50
+function pointsXGameRatio (min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min)
+}
 
 
 
