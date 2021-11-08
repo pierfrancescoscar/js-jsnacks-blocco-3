@@ -31,14 +31,10 @@ const basketPlayer = {
 
 const playerCode = basketPlayer.code;
 
+// Functions Evocations
 randomLetters();
-
-console.log(randomLetters());
-
 randomNumbers(1, 9);
-
-console.log(randomNumbers(1, 9));
-
+//
 
 
 // Random 3 Uppercase Letters Functions
@@ -52,8 +48,6 @@ function randomLetters() {
     }
     return result;
 }
-
-// console.log(randomLetters());
 
 // Random 3 Numbers Functions
 function randomNumbers(min, max) {
