@@ -15,3 +15,13 @@
 // 4. Creare un array di 10 giocatori di basket, con le regole sopra indicate
 // 5. Creare un nuovo array con i giocatori che hanno una media di punti superiore a 35 e la percentuale di successo per i tiri da 3 punti superiore all’80%.
 
+// Refs
+const basketPlayer = {
+        code: 'txt',
+        firstName: 'txt',
+        lastName: 'txt',
+        age: 'txt',
+        pointsXGame: 1,
+        shootPercentage: 1,
+    };
+
