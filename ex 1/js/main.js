@@ -31,10 +31,21 @@ const basketPlayer = {
 
 const playerCode = basketPlayer.code;
 
+randomLetters();
+
+console.log(randomLetters());
+
+randomNumbers(1, 9);
+
+console.log(randomNumbers(1, 9));
+
+
+
+// Random 3 Uppercase Letters Functions
 function randomLetters() {
 
     const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    let result = '';
+    let result = [];
 
     for (let i = 0; i <= 3 - 1; i++ ) {
         result += alphabet.charAt(Math.floor(Math.random() * alphabet.length));
@@ -42,4 +53,20 @@ function randomLetters() {
     return result;
 }
 
-console.log(randomLetters());
+// console.log(randomLetters());
+
+// Random 3 Numbers Functions
+function randomNumbers(min, max) {
+
+    let numbers = []; 
+
+    for (let i = 0; i < 3; i++) { 
+    numbers.push(Math.floor(Math.random() * max) + min); 
+    } 
+    return numbers; 
+} 
+
+
+
+
+
