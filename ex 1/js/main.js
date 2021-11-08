@@ -32,7 +32,8 @@ const basketPlayer = {
 // Functions Evocations
 randomLetters(); // Random alphabet letters (we need 3 of them)
 randomNumbers(1, 9); // Random numbers from 1 to 9 (we need 3 of them)
-pointsXGameRatio (0, 50) // Random numbers from 1 to 50 for our points x game/r
+pointsXGameRatio(0, 50); // Random numbers from 1 to 50 for our points x game/r
+completed3Shoots (0, 100); // Random numbers from 0 to 100 for "3pts" shoots
 //
 
 // Update Basketball Player Code
@@ -46,6 +47,12 @@ const points = pointsXGameRatio (0, 50);
 
 basketPlayer.pointsXGame = points;
 console.log('New points per game: ' , basketPlayer.pointsXGame);
+
+// Update 3 Points Percentagre
+const threePoints = completed3Shoots (0, 100);
+
+basketPlayer.threePointsPercentage = threePoints;
+console.log ('Percentage of 3 points shoots completed: ' ,basketPlayer.threePointsPercentage,'%');
 
 
 // Function - Random 3 Uppercase Letters
@@ -77,6 +84,13 @@ function randomNumbers(min, max) {
 function pointsXGameRatio (min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min)
 }
+//
+
+// Function -- Random number from 0 to 100
+function completed3Shoots (min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min)
+}
+//
 
 
 
