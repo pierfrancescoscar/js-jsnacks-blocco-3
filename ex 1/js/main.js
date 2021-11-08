@@ -17,7 +17,7 @@
 
 // Refs
 const basketPlayer = {
-        code: '123ABC',
+        code: '',
         firstName: 'Pierfrancesco',
         lastName: 'Scarinci',
         age: '26',
@@ -29,27 +29,32 @@ const basketPlayer = {
 
 // Basket Player code must be generated from 3 random uppercase letters and 3 random numbers
 
-const playerCode = basketPlayer.code;
-
 // Functions Evocations
 randomLetters();
 randomNumbers(1, 9);
 //
 
+// Update Basketball Player Code
+const playerCode = randomLetters() + randomNumbers(1, 9);
+console.log(playerCode);
 
-// Random 3 Uppercase Letters Functions
+basketPlayer.code = playerCode;
+
+
+// Function - Random 3 Uppercase Letters
 function randomLetters() {
 
     const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    let result = [];
+    let result = '';
 
     for (let i = 0; i <= 3 - 1; i++ ) {
         result += alphabet.charAt(Math.floor(Math.random() * alphabet.length));
     }
     return result;
 }
+//
 
-// Random 3 Numbers Functions
+// Function -- Randon 3 Numbers
 function randomNumbers(min, max) {
 
     let numbers = []; 
@@ -57,8 +62,16 @@ function randomNumbers(min, max) {
     for (let i = 0; i < 3; i++) { 
     numbers.push(Math.floor(Math.random() * max) + min); 
     } 
-    return numbers; 
-} 
+    return numbers;
+}
+//
+
+
+
+
+
+
+
 
 
 
