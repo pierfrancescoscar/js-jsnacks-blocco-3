@@ -145,12 +145,15 @@ const tenPlayers = [
 
 console.log('10 giocatori: ', tenPlayers);
 
-// 5. Creating an array in which players has points ratio > 35 and three points shoots ratio > 80
+// 5. Creating an array for those players that has points ratio > 35 and three points shoots ratio > 80
 
+const bestPlayers = tenPlayers.filter((player) =>  {
+    if ( (player.pointsXGame > 35) && (player.threePointsPercentage > 80) ) {
+        return player;
+    }
+})
 
-
-
-
+console.log('Best players: ', bestPlayers);
 
 // Function - Random 3 Uppercase Letters
 function randomLetters() {
@@ -165,7 +168,7 @@ function randomLetters() {
 }
 //
 
-// Function -- Randon 3 Numbers
+// Function -- Random 3 Numbers
 function randomNumbers(min, max) {
 
     let numbers = []; 
