@@ -27,7 +27,7 @@ const basketPlayer = {
 
 // Functions
 
-// Basket Player code must be generated from 3 random uppercase letters and 3 random numbers
+// 2. Basket Player code must be generated from 3 random uppercase letters and 3 random numbers
 
 // Functions Evocations
 randomLetters(); // Random alphabet letters (we need 3 of them)
@@ -53,6 +53,10 @@ const threePoints = completed3Shoots (0, 100);
 
 basketPlayer.threePointsPercentage = threePoints;
 console.log ('Percentage of 3 points shoots completed: ' ,basketPlayer.threePointsPercentage,'%');
+
+// 3. Print basket player name, lastname, age and his playing code.
+const {firstName, lastName, age, code} = basketPlayer;
+console.log('Show me name, surname, age and player code: ' ,firstName, lastName, age, code); // Printing what has been asked here on top
 
 
 // Function - Random 3 Uppercase Letters
